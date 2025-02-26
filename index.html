@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero reveal">
+        <div class="hero-text">
+            <h1>Hey, I'm Michael Andia 👋</h1>
+            <p>3rd-Year IT Student | Web Developer | Django Enthusiast</p>
+            <a href="#projects" class="hero-button">Check My Work</a>
+        </div>
+        <img src="me.jpg" alt="Michael Andia Profile Image">
+    </header>
+
+    <!-- About Section -->
+<section id="about" class="about reveal">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I'm a 3rd-year Information Technology student at <strong>Cavite State University - Bacoor Campus</strong>.  
+            Passionate about web development, Django, and Python, I'm continuously learning and building projects that  
+            solve real-world problems.  
+        </p>
+
+        <h3>Skills & Technologies</h3>
+        <ul class="skills">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Database Management</li>
+        </ul>
+
+        <!-- Aesthetic Image Gallery -->
+        <div class="gallery">
+            <img src="prog1.jpg" alt="Aesthetic Programmer 1">
+            <img src="prog2.jpg" alt="Aesthetic Programmer 2">
+            <img src="prog3.jpg" alt="Aesthetic Programmer 3">
+            <img src="prog4.jpg" alt="Aesthetic Programmer 4">
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2>Academic Projects</h2>
+            <p>Here are some projects I've worked on as part of my studies:</p>
+            
+            <!-- Project 1 -->
+<div class="project-card">
+    <h3>Library Management System 📚</h3>
+    <p>A Django-based system that helps libraries efficiently manage books, members, and borrowing records.</p>
+    <div class="slider">
+        <button class="prev" onclick="prevSlide(0)">&#10094;</button>
+        <img src="library1.jpg" class="slide slide-0 active" alt="Library System 1">
+        <img src="library2.jpg" class="slide slide-0" alt="Library System 2">
+        <img src="library3.jpg" class="slide slide-0" alt="Library System 3">
+        <button class="next" onclick="nextSlide(0)">&#10095;</button>
+    </div>
+</div>
+
+<!-- Project 2 -->
+<div class="project-card">
+    <h3>EduMatch System 🎓</h3>
+    <p>A Django platform designed to connect students with academic commissioners for better educational support.</p>
+    <div class="slider">
+        <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+        <img src="edumatch1.jpg" class="slide slide-1 active" alt="EduMatch System 1">
+        <img src="edumatch2.jpg" class="slide slide-1" alt="EduMatch System 2">
+        <img src="edumatch3.jpg" class="slide slide-1" alt="EduMatch System 3">
+        <button class="next" onclick="nextSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect! Whether it's for collaborations, projects, or just a chat, feel free to reach out.</p>
+            <a href="mailto:bc.michael.andia@cvsu.edu.ph" class="contact-button">Send Me an Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Michael Andia | 3rd-Year IT Student at CvSU Bacoor</p>
+            <div class="social-links">
+                <a href="https://github.com/github-jian05">GitHub</a>
+                <a href="https://www.linkedin.com/in/michael-andia-805588353/">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Image Slider -->
+    <script src="script.js"></script>
+</body>
+</html>
